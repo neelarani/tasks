@@ -129,31 +129,3 @@ const sumEvenNumbers = arr => {
 
 const evenSum = sumEvenNumbers(numbers);
 console.log(evenSum);
-
-/**
- * 7. Task: Leap Year Checker
-
--Write a function that determines whether a given year is a leap year.
-
-Example: Happy New Year
-
-
-
-8. Task: Unique Values
-
--Create an array of numbers with some duplicate values. Write a function to filter out the duplicate values and return a new array with only unique numbers. Print the result.
-
-
-
-09.Task: Advanced Sorting
-
--Create an array of objects representing students with 'name' and 'grades' properties. Write a function to sort the students by average grade in descending order.
-
-
-
-10. Task: Functional Programming - Reduce
-
--Write a function that uses the reduce function to calculate the total value of an array of objects with a 'quantity' and 'price' property.interview
-
-
- */

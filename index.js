@@ -63,3 +63,97 @@ const composedFunction = num => {
   return result;
 };
 console.log(composedFunction(2));
+
+/**
+ * 4.Task: Sorting Objects
+
+-Create an array of objects representing cars with properties like make, model, and year. Write a function to sort the array of cars by the year of manufacture in ascending order. Print the sorted array.
+ */
+
+const cars = [
+  { make: 'Toyota', model: 'Corolla', year: 2018 },
+  { make: 'Honda', model: 'Civic', year: 2020 },
+  { make: 'Tesla', model: 'Model 3', year: 2022 },
+  { make: 'Ford', model: 'Mustang', year: 2019 },
+];
+
+const sortCarsByYear = carArr => {
+  return carArr.sort((a, b) => a.year - b.year);
+};
+
+console.log(sortCarsByYear(cars));
+
+/**
+ * 5.Task: Find and Modify
+
+-Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
+ */
+const persons = [
+  { name: 'Nila', age: 21 },
+  { name: 'Rafi', age: 35 },
+  { name: 'Sumi', age: 27 },
+  { name: 'Ankus', age: 30 },
+  { name: 'Rabeya', age: 24 },
+];
+
+const updateAgeByName = (array, personName, newAge) => {
+  for (let person of array) {
+    if (person.name === personName) {
+      person.age = newAge;
+      break;
+    }
+  }
+  return array;
+};
+
+const updatedPersons = updateAgeByName(persons, 'Nila', 28);
+
+console.log(updatedPersons);
+
+/**
+ * 6.Task: Array Reduction
+
+-Create an array of numbers. Write a function that uses the reduce method to calculate the sum of all even numbers in the array.
+ */
+
+const numbers = [5, 12, 8, 21, 3, 17, 10, 2];
+
+const sumEvenNumbers = arr => {
+  return arr.reduce((sum, num) => {
+    if (num % 2 === 0) {
+      return sum + num;
+    }
+    return sum;
+  }, 0);
+};
+
+const evenSum = sumEvenNumbers(numbers);
+console.log(evenSum);
+
+/**
+ * 7. Task: Leap Year Checker
+
+-Write a function that determines whether a given year is a leap year.
+
+Example: Happy New Year
+
+
+
+8. Task: Unique Values
+
+-Create an array of numbers with some duplicate values. Write a function to filter out the duplicate values and return a new array with only unique numbers. Print the result.
+
+
+
+09.Task: Advanced Sorting
+
+-Create an array of objects representing students with 'name' and 'grades' properties. Write a function to sort the students by average grade in descending order.
+
+
+
+10. Task: Functional Programming - Reduce
+
+-Write a function that uses the reduce function to calculate the total value of an array of objects with a 'quantity' and 'price' property.interview
+
+
+ */
